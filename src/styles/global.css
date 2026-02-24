@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --cream:       #F5EFE4;
+  --cream-dark:  #EDE4D3;
+  --cream-mid:   #F0E8D8;
+  --tan:         #D4B896;
+  --tan-deep:    #B8956A;
+  --brown:       #7A5C3E;
+  --brown-dark:  #4A3728;
+  --rose:        #D4A5A0;
+  --rose-soft:   #EDD5CE;
+  --sage:        #9CAF96;
+  --sage-soft:   #D4E0D1;
+  --sage-deep:   #6A8F66;
+  --gold:        #C9A84C;
+  --gold-soft:   #E8D5A3;
+  --text-main:   #3C2F24;
+  --text-soft:   #7A6455;
+  --text-muted:  #A08C7A;
+  --border:      rgba(212,184,150,0.35);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--cream);
+  color: var(--text-main);
+  font-family: 'Lora', Georgia, serif;
+  overflow-x: hidden;
+}
+
+/* grain overlay — appears on every page */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.5;
+}
+
+/* shared animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.6); }
+}
+
+/* shared ember dot */
+.ember-dot {
+  width: 7px; height: 7px;
+  background: var(--gold);
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulse-dot 2.5s ease-in-out infinite;
+}
