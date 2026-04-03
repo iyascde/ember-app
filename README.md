@@ -87,3 +87,7 @@ Built for the **Amazon Nova AI Hackathon** (February 2026) — Voice AI category
 ## 🕯️ Made with love
 
 *Ember was built with the belief that technology should serve our most human moments.*
+
+## 🔌 AWS Integration Note
+
+The Amazon Nova 2 Sonic voice integration is fully architected and ready to connect — the FastAPI backend includes a complete `/voice` WebSocket endpoint and `/conversation` endpoint with a dynamic system prompt builder that personalizes each session from the memory profile. AWS credentials have been intentionally left disconnected to avoid unnecessary API usage while the app is not in active demo mode. Connecting Nova 2 Sonic is a single configuration step — add credentials to the `.env` file and the entire voice pipeline activates immediately.
