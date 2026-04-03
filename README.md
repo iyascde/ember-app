@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# 🕯️ Ember — AI Dementia Memory Companion
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> *Some memories never have to fade.*
 
-## Available Scripts
+Ember is a full-stack voice AI web application that provides real-time conversational companionship for people living with dementia. Built with Amazon Nova 2 Sonic, Ember creates warm, deeply personal conversations by drawing on a rich memory profile built by the patient's family.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 💛 The Problem
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Over 55 million people worldwide live with dementia. For their families, one of the most painful experiences is watching a loved one feel lost, confused, or alone — especially when a caregiver can't always be present. Existing tools focus on medication and logistics. Nothing focuses on simply being *there*.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🌿 The Solution
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Ember gives dementia patients a familiar, patient, and deeply personal voice companion — available any hour of the day. Family members build a Memory Profile that tells Ember everything about their loved one: their name, their stories, their family, their favourite music, what brings them comfort. Ember uses this to hold genuinely meaningful conversations — never correcting, always validating, always warm.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ✨ Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Real-time voice conversation** powered by Amazon Nova 2 Sonic
+- **Memory Profile system** — family members build a rich personal profile that shapes every conversation
+- **Caregiver Dashboard** — mood tracking, conversation summaries, and AI-generated suggestions
+- **Dynamic personalization** — every interaction reflects the patient's real name, memories, and relationships
+- **Multilingual support** — Ember speaks in the language your loved one is most comfortable in
+- **Available 24/7** — especially useful during sundowning and late-night anxiety
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🛠️ Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| Layer | Technology |
+|-------|-----------|
+| Frontend | React, React Router |
+| Voice AI | Amazon Nova 2 Sonic |
+| Backend | Python, FastAPI |
+| Cloud | AWS |
+| Styling | Custom CSS with CSS Variables |
+| State Management | React Context API |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🚀 Getting Started
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Prerequisites
+- Node.js v18+
+- Python 3.10+
+- AWS Account with Nova 2 Sonic access
 
-## Learn More
+### Installation
+```bash
+# Clone the repo
+git clone https://github.com/iyascde/ember-app.git
+cd ember-app
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Install frontend dependencies
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Start the development server
+npm start
+```
 
-### Code Splitting
+The app will open at `http://localhost:3000`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 📄 Pages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+| Page | Route | Description |
+|------|-------|-------------|
+| Home | `/` | Landing page with project overview |
+| Memory Profile | `/profile` | Family caregiver builds the patient's memory profile |
+| Companion | `/companion` | Patient-facing voice interface |
+| Dashboard | `/dashboard` | Caregiver overview, mood tracking, conversation logs |
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🏆 Hackathon
 
-### Advanced Configuration
+Built for the **Amazon Nova AI Hackathon** (February 2026) — Voice AI category.
+8,000+ global participants.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 🕯️ Made with love
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*Ember was built with the belief that technology should serve our most human moments.*
